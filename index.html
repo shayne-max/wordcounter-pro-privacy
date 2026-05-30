@@ -45,6 +45,7 @@
             margin-bottom: 15px;
         }
     </style>
+<base target="_blank">
 </head>
 <body>
     <h1>Privacy Policy</h1>
@@ -53,13 +54,17 @@
     <p>This Privacy Policy explains how <strong>Word Counter & Scan</strong> ("we," "us," or "our") collects, uses, and protects your information when you use our iOS application. By using our application, you agree to the collection and use of information in accordance with this policy.</p>
 
     <h2>1. Information We Collect</h2>
-    
+
     <h3>1.1 Text Content You Provide</h3>
     <p>When you type, paste, or scan text into the app, this content is processed <strong>locally on your device</strong>. We do not upload, store, or transmit your text content to our servers or any third party. Text analysis (word count, readability scores, etc.) is performed entirely on-device.</p>
 
     <h3>1.2 Images for OCR Scanning</h3>
     <div class="highlight">
-        <p>When you use the Camera or Photo Library scanning feature, images are processed <strong>entirely on your device</strong> using Apple's native <strong>Vision Framework</strong>. No images are uploaded to external servers. Text recognition happens locally, and images are not retained after processing.</p>
+        <p>When you use the Camera or Photo Library scanning feature, images are processed using two methods depending on your device and settings:</p>
+        <ul>
+            <li><strong>Apple Vision Framework (Primary):</strong> Images are processed <strong>entirely on your device</strong> using Apple's native Vision Framework. No images are uploaded to external servers. Text recognition happens locally, and images are not retained after processing.</li>
+            <li><strong>OCR.space API (Fallback):</strong> In certain cases where on-device recognition may be less accurate, images may be sent to <strong>OCR.space</strong> for text extraction. Images are transmitted over encrypted connections and are not permanently stored by OCR.space. For more details, see <a href="https://ocr.space/privacypolicy" target="_blank" rel="noopener noreferrer">OCR.space Privacy Policy</a>.</li>
+        </ul>
     </div>
 
     <h3>1.3 Device & Usage Data</h3>
@@ -87,10 +92,10 @@
 
     <h2>3. Third-Party Services</h2>
     <p>We use the following third-party services that may collect data as described in their respective privacy policies:</p>
-    
+
     <ul>
         <li><strong>Google AdMob (Advertising):</strong> We use AdMob to serve banner and interstitial advertisements. AdMob may collect device identifiers and usage data for ad personalization. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a></li>
-        
+
         <li><strong>RevenueCat (Subscription Management):</strong> We use RevenueCat to manage in-app purchases and subscriptions. RevenueCat may collect purchase history, subscription status, and device identifiers. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat's Privacy Policy</a></li>
     </ul>
 
@@ -102,7 +107,7 @@
     <p>We prioritize the security of your data:</p>
     <ul>
         <li><strong>Text Content:</strong> Never stored on our servers. All text remains on your device.</li>
-        <li><strong>Images:</strong> Processed on-device using Apple's Vision Framework and not retained.</li>
+        <li><strong>Images:</strong> Processed on-device using Apple's Vision Framework when possible; otherwise sent to OCR.space over encrypted connections and not retained.</li>
         <li><strong>Usage Data:</strong> Retained by our advertising and analytics partners per their respective policies.</li>
         <li><strong>Subscription Data:</strong> Retained by RevenueCat for the duration of your subscription plus applicable legal retention periods.</li>
         <li><strong>Local Storage:</strong> Stored locally until you delete the app.</li>
